@@ -1,1 +1,32 @@
-TEst
+<html>
+    <head>
+        <script>
+            function submit(){
+                console.log("DZIALA");
+                var result;
+                var inputOne = parseFloat(document.getElementById("input-1").value); 
+                var inputTwo = document.getElementById("input-2").value; 
+                var inputThree = parseFloat(document.getElementById("input-3").value); 
+
+                if(inputTwo === "+"){
+                    result = inputOne + inputThree;
+                } else if (inputTwo === "-"){
+                    result = inputOne - inputThree;
+                } else if (inputTwo === "*"){
+                    result = inputOne * inputThree;
+                } else if (inputTwo === "/"){
+                    result = inputOne / inputThree;
+                }
+
+                document.getElementById("result").innerHTML = result;
+            }
+        </script>
+    </head>
+    <body>
+        <input id="input-1">
+        <input id="input-2">
+        <input id="input-3">
+        <button onclick="submit()">Submit</button>
+        <div id="result"></div>
+    </body>
+</html>
