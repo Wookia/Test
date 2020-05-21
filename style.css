@@ -1,0 +1,31 @@
+.abutton {
+    font-size: 50px;
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    border: 1px #335c72;
+    transition-duration: 0.4s;
+    color: white;
+    background-color: #4d7e99;
+    float:left
+
+    }
+    .abutton:hover {
+        background-color: #335c72;
+        color: white;
+    }
+    .calculator{
+    cursor: not-allowed;
+    font-size: 25px;
+    width: 75px;
+    height: 75px;
+    border: 1px #335c72;
+    transition-duration: 0.4s;
+    color: white;
+    background-color: #4d7e99;
+    float:left
+    }
+    .calculator:hover{
+        background-color: #335c72;
+        color: white
+    }

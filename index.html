@@ -1,4 +1,4 @@
-<html>
+<!--<html>
     <head>
         <script>
             function submit(){
@@ -28,5 +28,141 @@
         <input id="input-3">
         <button onclick="submit()">Submit</button>
         <div id="result"></div>
+    </body>
+</html>-->
+
+<html>
+    <head>
+        <style>
+            .abutton {
+            font-size: 50px;
+            cursor: pointer;
+            width: 75px;
+            height: 75px;
+            border: 3px white;
+            transition-duration: 0.4s;
+            color: white;
+            background-color: #4d7e99;
+            float:left;
+            
+
+            }
+            .abutton:hover {
+                background-color: #335c72;
+                color: white;
+            }
+             .calculator{
+            cursor: not-allowed;
+            font-size: 15px;
+            width: 75px;
+            height: 75px;
+            border: 3px #335c72;
+            transition-duration: 0.4s;
+            color: white;
+            background-color: #4d7e99;
+            float:left;
+            position:relative;
+            top:100px;
+            }
+            .calculator:hover{
+                background-color: #335c72;
+                color: white;
+            }
+            .rectangle{
+                height: 75px;
+                width: 75px;
+                background-color: #4d7e99;
+                float: left;
+            }
+            .floatleft{
+                float: left
+            }
+        </style>
+        <script>
+            function one() {
+                document.getElementById('threediv').style.display = "block";
+            }
+            function two() {
+                document.getElementById('threediv').style.display = "block";
+            }
+            function three() {
+                 document.getElementById('threediv').style.display = "block";
+            }
+            function four() {
+                 document.getElementById('fourdiv').style.display = "block";
+            }
+            function five() {
+                 document.getElementById('fivediv').style.display = "block";
+            }
+            function six() {
+                 document.getElementById('sixdiv').style.display = "block";
+            }
+            function seven() {
+                 document.getElementById('sevendiv').style.display = "block";
+            }
+            function eight() {
+                 document.getElementById('eightdiv').style.display = "block";
+            }
+            function nine() {
+                 document.getElementById('ninediv').style.display = "block";
+            }
+            function zero() {
+                 document.getElementById('zerodiv').style.display = "block";
+            }
+            function plus() {
+                 document.getElementById('plusdiv').style.display = "block";
+            }
+            function minus() {
+                 document.getElementById('minusdiv').style.display = "block";
+            }
+            function multipy() {
+                 document.getElementById('multiplydiv').style.display = "block";
+            }
+            function devide() {
+                 document.getElementById('devidediv').style.display = "block";
+            }
+        </script>
+    </head>
+    <body>  
+
+        <div style="width:300px;height:400px;border:3px solid #335c72;">
+        <center>
+        <div style="width:300px;height:100px;border:0px solid #335c72;">
+            <section class="floatleft">
+                <div id="onediv"  style="display:none;" class="answer_list" >1</div>
+                <div id="twodiv"  style="display:none;" class="answer_list" >2</div>
+                <div id="threediv"  style="display:none;" class="answer_list" >3</div>
+                <div id="fourdiv"  style="display:none;" class="answer_list" >4</div>
+                <div id="fivediv"  style="display:none;" class="answer_list" >5</div>
+                <div id="sixdiv"  style="display:none;" class="answer_list" >6</div>
+                <div id="sevendiv"  style="display:none;" class="answer_list" >7</div>
+                <div id="eightdiv"  style="display:none;" class="answer_list" >8</div>
+                <div id="ninediv"  style="display:none;" class="answer_list" >9</div>
+                <div id="zerodiv"  style="display:none;" class="answer_list" >0</div>
+                <div id="plusdiv"  style="display:none;" class="answer_list" >+</div>
+                <div id="minusdiv"  style="display:none;" class="answer_list" >-</div>
+                <div id="multiplydiv"  style="display:none;" class="answer_list" >*</div>
+                <div id="devidediv"  style="display:none;" class="answer_list" >/</div>
+            </section>
+        </div>
+        <button type="button" class="abutton" value="Show Div" onclick=one()>1</button>
+        <button type="button" class="abutton" value="Show Div" onclick=two()>2</button>
+        <button type="button" class="abutton" value="Show Div" onclick=three()>3</button>
+        <button type="button" class="abutton" value="Show Div" onclick=plus()>+</button><br>
+        <button type="button" class="abutton" value="Show Div" onclick=four()>4</button>
+        <button type="button" class="abutton" value="Show Div" onclick=five()>5</button>
+        <button type="button" class="abutton" value="Show Div" onclick=six()>6</button>
+        <button type="button" class="abutton" value="Show Div" onclick=minus()>-</button><br>
+        <button type="button" class="abutton" value="Show Div" onclick=seven()>7</button>
+        <button type="button" class="abutton" value="Show Div" onclick=eight()>8</button>
+        <button type="button" class="abutton" value="Show Div" onclick=nine()>9</button>
+        <button type="button" class="abutton" value="Show Div" onclick=multiply()>*</button><br>
+        <button type="button" class="abutton" value="Show Div" onclick=zero()>0</button>
+        <button type="button" class="abutton" value="Show Div" onclick=devide()>/</button>
+        <button type="button" class="abutton" value="Show Div" onclick=equal()>=</button>
+        <div class=rectangle></div>
+
+        </center>
+        </div>
     </body>
 </html>
