@@ -78,7 +78,7 @@
                 float: left
             }
         </style>
-        <script>
+        <!--<script>
             function one() {
                 document.getElementById('threediv').style.display = "block";
             }
@@ -120,6 +120,72 @@
             }
             function devide() {
                  document.getElementById('devidediv').style.display = "block";
+            
+        
+        </script>-->
+        <script>
+            var result;
+            function one() {
+                console.log("dupa")
+                result = result + "1";
+                document.getElementById("result").innerHTML = result;
+            }
+            function two() {
+                result= result + "2";
+                document.getElementById("result").innerHTML = result;
+            }
+            function three() {
+                result = result + "3";
+                document.getElementById("result").innerHTML = result;
+            }
+            function four() {
+                result = result + "4";
+                document.getElementById("result").innerHTML = result;
+            }
+            function five() {
+                result = result + "5";
+                document.getElementById("result").innerHTML = result;
+            }
+            function six() {
+                result = result + "6";
+                document.getElementById("result").innerHTML = result;
+            }
+            function seven() {
+                result = result + "7";
+                document.getElementById("result").innerHTML = result;
+            }
+            function eight() {
+                result = result + "8";
+                document.getElementById("result").innerHTML = result;
+            }
+            function nine() {
+                result = result + "9";
+                document.getElementById("result").innerHTML = result;
+            }
+            function zero() {
+                result = result + "0";
+                document.getElementById("result").innerHTML = result;
+            }
+            function plus() {
+                result = result + "+";
+                document.getElementById("result").innerHTML = result;
+            }
+            function minus() {
+                result = result + "-";
+                document.getElementById("result").innerHTML = result;
+            }
+            function multipy() {
+                result = result + "*";
+                document.getElementById("result").innerHTML = result;
+            }
+            function devide() {
+                result = result + "/";
+                document.getElementById("result").innerHTML = result;
+            }
+            function equal() {
+                //int final = Integer.ParseInt(result)
+                document.getElementById("final").innerHTML = result;
+
             }
         </script>
     </head>
@@ -129,7 +195,7 @@
         <center>
         <div style="width:300px;height:100px;border:0px solid #335c72;">
             <section class="floatleft">
-                <div id="onediv"  style="display:none;" class="answer_list" >1</div>
+                <!--<div id="onediv"  style="display:none;" class="answer_list" >1</div>
                 <div id="twodiv"  style="display:none;" class="answer_list" >2</div>
                 <div id="threediv"  style="display:none;" class="answer_list" >3</div>
                 <div id="fourdiv"  style="display:none;" class="answer_list" >4</div>
@@ -142,7 +208,10 @@
                 <div id="plusdiv"  style="display:none;" class="answer_list" >+</div>
                 <div id="minusdiv"  style="display:none;" class="answer_list" >-</div>
                 <div id="multiplydiv"  style="display:none;" class="answer_list" >*</div>
-                <div id="devidediv"  style="display:none;" class="answer_list" >/</div>
+                <div id="devidediv"  style="display:none;" class="answer_list" >/</div>-->
+                
+                <div id=result></div>
+                <div id=final></div>
             </section>
         </div>
         <button type="button" class="abutton" value="Show Div" onclick=one()>1</button>
