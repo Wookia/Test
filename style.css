@@ -1,31 +1,56 @@
+
 .abutton {
     font-size: 50px;
     cursor: pointer;
     width: 75px;
     height: 75px;
-    border: 1px #335c72;
+    border: 3px white;
     transition-duration: 0.4s;
     color: white;
     background-color: #4d7e99;
-    float:left
+    float:left;
+    
 
     }
     .abutton:hover {
         background-color: #335c72;
         color: white;
     }
-    .calculator{
-    cursor: not-allowed;
-    font-size: 25px;
+.symbol {
+    font-size: 50px;
+    cursor: pointer;
     width: 75px;
     height: 75px;
-    border: 1px #335c72;
+    border: 3px white;
     transition-duration: 0.4s;
     color: white;
     background-color: #4d7e99;
-    float:left
+    float:left;
+    
+
     }
-    .calculator:hover{
+.symbol:hover {
         background-color: #335c72;
-        color: white
+        color: white;
+    }
+
+.delete {
+    font-size: 50px;
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    border: 3px white;
+    transition-duration: 0.4s;
+    color: rgb(248, 165, 110);
+    background-color: #4d7e99;
+    float:left;
+}
+
+.delete:hover {
+    background-color: #335c72;
+    color: white;
+}
+
+.floatleft{
+        float: left
     }
