@@ -52,9 +52,33 @@
                     else {
                         eq.push(element)
                     }
-                //console.log(eq)
+                console.log(eq)
                 }
+                var mord=0;
+                var loop=0;
+            
+                //for(var element of eq){
+                    //if (element==='*'|| element==='/'){
+                        //mord= parseInt(eq[loop - 1])parseInt(eq[loop + 1])
+                        //eq.splice(loop,2);
+                        //eq[loop-1]=mord;
+                    //}
                 
+                while (eq.includes('*')|| eq.includes("/")){
+                    if (element==='*'){
+                        mord= parseInt(eq[loop - 1])*parseInt(eq[loop + 1])
+                        eq.splice(loop,2);
+                        eq[loop-1]=mord;
+                    }
+                    if (element==='/'){
+                        console.log('dupa')
+                        mord= parseInt(eq[loop - 1])/parseInt(eq[loop + 1])
+                        eq.splice(loop,2);
+                        eq[loop-1]=mord;
+                    }
+                    loop +=1                        
+                }
+                console.log(eq)
                 var lastSing;
                 for(var element of eq){
                     if(element.match("[0-9]+")){
@@ -72,9 +96,8 @@
                         lastSing = element;
                     }
                 }
-                //return result;
-                var resultstr = toString(result)
-                console.log(resultstr)
+                
+                var resultstr = result.toString()
                 document.getElementById("final").innerHTML = "= " + resultstr;
 
             }
