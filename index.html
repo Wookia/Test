@@ -6,13 +6,34 @@
         <script>
             var equation=0;
             var text="";
+            var lastone='';
+            var resultstr='';
+
 
             function clicked (char){
-                text = text + char;
+                if (lastone==="="){
+                    text=resultstr
+                    console.log(text)
+                    resultstr=''
+                    document.getElementById("final").innerHTML = resultstr;
+
+                }
+                if (char==='C'){
+                    text=''
+                    resultstr=''
+                    document.getElementById("final").innerHTML = resultstr;
+
+                }
+                else {
+                    text = text + char;
+                }
                 document.getElementById("text").innerHTML = text;
+
+                lastone=char
             }
             
             function myEval(){
+                lastone="="
                 //3 5 7
                 //2 (3) 4
                 //4 (5) 6
@@ -28,7 +49,7 @@
                 // var text = "12+10/2-2*4+10"; //19
                 //var text = "12+10-4+3-13" //8
                 var result = 0;
-                //parse
+                
 
                 var split = text.split("");
                 var eq = [];
@@ -52,7 +73,7 @@
                     else {
                         eq.push(element)
                     }
-                console.log(eq)
+                //console.log(eq)
                 }
                 var mord=0;
                 var loop=0;
@@ -71,14 +92,14 @@
                         eq[loop-1]=mord;
                     }
                     if (element==='/'){
-                        console.log('dupa')
+                        //console.log('dupa')
                         mord= parseInt(eq[loop - 1])/parseInt(eq[loop + 1])
                         eq.splice(loop,2);
                         eq[loop-1]=mord;
                     }
                     loop +=1                        
                 }
-                console.log(eq)
+                //console.log(eq)
                 var lastSing;
                 for(var element of eq){
                     if(element.match("[0-9]+")){
@@ -97,7 +118,7 @@
                     }
                 }
                 
-                var resultstr = result.toString()
+                resultstr = result.toString()
                 document.getElementById("final").innerHTML = "= " + resultstr;
 
             }
@@ -105,6 +126,11 @@
                 document.getElementById("final").innerHTML = "= " + myEval(result);
             }
             
+            //function deletee(){
+                //removethis=text-text
+                //document.getElementById("text").innerHTML = removethis;
+
+            //}
         </script>
     </head>
     <body>  
